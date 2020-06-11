@@ -1,7 +1,8 @@
 # coding: UTF-8
 require 'telegram/bot'
 
-token = '1256536550:AAHdvWTfNzgHZnSS_geuVowGW5Q1XvpisCQ'
+#token = '1256536550:AAHdvWTfNzgHZnSS_geuVowGW5Q1XvpisCQ'
+token = ENV['TELEGRAM_BOT_API_KEY']
 
 #Telegram::Bot::Client.run(token, url: 'http://46.4.96.137:8080') do |bot|
 Telegram::Bot::Client.run(token) do |bot|
